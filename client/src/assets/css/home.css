@@ -1,0 +1,43 @@
+.welcome-topic {
+    font-size: 50px;
+}
+
+.card-custom {
+    width: 30%;
+}
+
+.card-header{
+
+}
+
+.card-body {}
+
+.gen-art {
+    border: 2px solid blue;
+    border-radius: 20px;
+}
+
+.design-art {
+    border: 2px solid orange;
+    border-radius: 20px;
+}
+
+.web-art {
+    border: 2px solid crimson;
+    border-radius: 20px;
+}
+
+.wht-we-do-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width:550px) {
+    .wht-we-do-inner {
+        flex-direction: column;
+    }
+
+    .card-custom {
+        width: 100%;
+    }
+}
