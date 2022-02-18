@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "fs": "^0.0.1-security",
+    "redux": "^4.1.2",
+    "redux-saga": "^1.1.3"
+  }
+}

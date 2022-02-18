@@ -1,0 +1,2 @@
+export const TEST_REDUX_LISTEN = "app/TEST_REDUX_LISTEN";
+export const TEST_REDUX_SUCCESS = "app/TEST_REDUX_SUCCESS";
