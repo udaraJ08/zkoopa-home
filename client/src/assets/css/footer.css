@@ -1,0 +1,30 @@
+.footer-icon {
+    color: white;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.footer-icon:hover {
+    transition: 0.2s;
+    transform: scale(1.5, 1.5);
+}
+
+.footer-icon:active {
+    transform: scale(0.99, 0.99);
+}
+
+.fc-icon:hover {
+    color: #2f93de;
+}
+
+.ig-icon:hover {
+    color: #e18032;
+}
+
+.yt-icon:hover {
+    color: #ff3434;
+}
+
+.ml-icon:hover {
+    color: #ffde7b;
+}

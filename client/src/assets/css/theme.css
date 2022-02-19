@@ -64,6 +64,14 @@ body {
     object-fit: cover;
 }
 
+.b-radius-10 {
+    border-radius: 10px;
+}
+
+.b-radius-50 {
+    border-radius: 50px;
+}
+
 .main-back-grad {
     background-image: linear-gradient(to left bottom, #01132f, #091233, #150f36, #210937, #2d0135);
 }
@@ -89,7 +97,7 @@ body {
 }
 
 .z-index-0 {
-    z-index: 0;
+    z-index: 0 !important;
 }
 
 .absolute {
