@@ -13,3 +13,17 @@ export const testReduxSuccess = (data) => {
         data
     }
 }
+
+export const connectWeb3Listen = () => {
+    return {
+        type: actionTypes.CONNECT_WEB3_LISTEN,
+    }
+}
+
+export const connectWeb3Success = (account, contract) => {
+    return {
+        type:actionTypes.CONNECT_WEB3_SUCCESS,
+        account,
+        contract
+    }
+}

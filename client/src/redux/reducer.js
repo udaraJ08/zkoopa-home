@@ -1,7 +1,10 @@
 import * as actionTypes from "./actionTypes";
 
 const init = {
-    num: 1
+    contract: null,
+    account: null,
+    loading: true,
+    failed: false
 }
 
 const appReducer = (state = init, action) => {
@@ -13,7 +16,16 @@ const appReducer = (state = init, action) => {
                 ...state,
                 num: action.data
             }
-        default: return state;
+        case actionTypes.CONNECT_WEB3_SUCCESS:
+            const {account, contract} = action;
+            return {
+                ...state,
+                account: account,
+                contract: contract,
+                loading: false
+            }
+        default:
+            return state;
     }
 }
 
