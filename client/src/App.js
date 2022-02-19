@@ -2,15 +2,17 @@ import React from "react";
 import "./assets/css/theme.css"
 
 import "./App.css";
-import MintBoard from "./views/MintBoard/MintBoard";
+import Home from "./views/Home/Home";
 import Welcome from "./views/Welcome/Welcome";
 import Footer from "./components/Footer";
+import NavBar from "./components/NavBar";
 
 const App = () => {
 
     return <div>
         <Welcome/>
-        <MintBoard/>
+        <NavBar />
+        <Home/>
         <Footer/>
     </div>
 }

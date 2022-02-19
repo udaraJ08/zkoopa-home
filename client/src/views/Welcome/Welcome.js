@@ -18,8 +18,8 @@ const Welcome = () => {
         <div style={{width: "150px", height: "150px"}} className="m-2 animate__bounce animate__animated z-index-top">
             <img className="object-fit" src={`https://avatars.dicebear.com/api/bottts/s.svg`}/>
         </div>
-        <h1 className="main-topic animate__lightSpeedInLeft animate__animated ">ZKOOPA</h1>
-        <h5 className="animate__lightSpeedInRight animate__animated sub-topic">custom avatar builder</h5>
+        <h1 className="main-topic animate__lightSpeedInLeft animate__animated main-topic-shadow">ZKOOPA</h1>
+        <p className="animate__lightSpeedInRight animate__animated sub-topic">WE EAT <span className="text-warning font-bold">NFTs</span> FOR LUNCH (also for dinner)</p>
         <button
             onClick={() => testRedux()}
             className="btn btn-danger mt-5 text-lg">LET'S GO MINTING

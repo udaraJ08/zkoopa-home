@@ -1,0 +1,125 @@
+.welcome-topic {
+    font-size: 50px;
+}
+
+.card-custom {
+    width: 30%;
+}
+
+.card-header{
+
+}
+
+.card-body {}
+
+.gen-art {
+    transition: 0.1s;
+    border: 2px solid blue;
+    border-radius: 20px;
+}
+
+.gen-art:hover {
+    transition: 0.2s;
+    box-shadow: 3px 3px 20px blue;
+}
+
+.design-art {
+    border: 2px solid orange;
+    border-radius: 20px;
+}
+
+.design-art:hover {
+    transition: 0.2s;
+    box-shadow: 3px 3px 20px orange;
+}
+
+.web-art {
+    border: 2px solid crimson;
+    border-radius: 20px;
+}
+
+.web-art:hover {
+    transition: 0.2s;
+    box-shadow: 3px 3px 20px crimson;
+}
+
+.wht-we-do-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.prof-sect {
+    background-image: url("https://papers.co/wallpaper/papers.co-sj27-dark-blue-night-gradation-blur-25-wallpaper.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+.prof-inner {
+    display: flex;
+}
+
+.prof-img {
+    width: 50%;
+    justify-content: center;
+}
+
+.prof-desc {
+    width: 50%;
+}
+
+.btn-ground {
+    display: flex;
+}
+
+.play-img {
+    transition: 0.1s ease-out;
+}
+
+.play-img:hover {
+    transition: 0.2s ease-in;
+    transform: scale(1.2, 1.2);
+}
+
+.scalable {
+    transition: 0.1s;
+}
+
+.scalable:hover {
+    z-index: 0;
+    transition: 0.2s;
+    transform: scale(1.2, 1.2) rotate(-10deg);
+}
+
+@media (max-width:550px) {
+    .wht-we-do-inner {
+        flex-direction: column;
+    }
+
+    .card-custom {
+        width: 100%;
+    }
+
+    .prof-inner {
+        flex-direction: column;
+    }
+
+    .prof-img {
+        width: 100%;
+    }
+
+    .prof-desc {
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn-ground {
+        flex-direction: column;
+    }
+
+    .play-smart {
+        width: 100%;
+    }
+
+    .scalable:hover {
+        transform: rotate(0deg);
+    }
+}

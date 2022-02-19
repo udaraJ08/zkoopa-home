@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
 
 body {
     background-image: linear-gradient(to left bottom, #01132f, #091233, #150f36, #210937, #2d0135);
@@ -17,12 +19,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #888;
+    background:  #1176c5;
     border-radius: 30px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: #0d67a9;
 }
 
 .full-page {
@@ -62,11 +64,20 @@ body {
     object-fit: cover;
 }
 
+.b-radius-10 {
+    border-radius: 10px;
+}
+
+.b-radius-50 {
+    border-radius: 50px;
+}
+
 .main-back-grad {
     background-image: linear-gradient(to left bottom, #01132f, #091233, #150f36, #210937, #2d0135);
 }
 
 .sub-topic {
+    font-size: 20px;
     font-family: 'Poiret One', cursive;
 }
 
@@ -75,6 +86,18 @@ body {
     animation-iteration-count: infinite;
     animation-duration: 1.5s;
     animation-timing-function: ease-out;
+}
+
+.z-index-2 {
+    z-index: 2;
+}
+
+.z-index-100 {
+    z-index: 100;
+}
+
+.z-index-0 {
+    z-index: 0 !important;
 }
 
 .absolute {
@@ -111,6 +134,10 @@ body {
     overflow: hidden;
 }
 
+.w-30 {
+    width: 30%
+}
+
 .mint-board-grad {
     background-image: linear-gradient(to right top, #004838, #00423a, #003b3b, #003439, #012d35);
 }
@@ -132,12 +159,28 @@ body {
     font-family: 'Lobster', cursive;
 }
 
+.font-bangers {
+    font-family: 'Bangers', cursive;
+}
+
+.font-monrope {
+    font-family: 'Manrope', sans-serif;
+}
+
 .text-shadow {
     text-shadow: 0 5px 5px black;
 }
 
 .text-capitalize {
     text-transform: capitalize;
+}
+
+.text-orange {
+    color: #FEA47F;
+}
+
+.text-whitesmoke {
+    color: #ded6d6;
 }
 
 .image-scale {
@@ -156,6 +199,28 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
+.font-bold {
+    font-weight: bolder;
+}
+
+.mr-2 {
+    margin-right: 20px;
+}
+
 .pointer {
     cursor: pointer;;
+}
+
+.main-topic-shadow {
+    text-shadow: 3px 3px 3px blue;
+}
+
+@media (max-width:550px) {
+    .main-topic {
+        font-size: 70px;
+    }
+
+    .sub-topic {
+        font-size: 15px;
+    }
 }

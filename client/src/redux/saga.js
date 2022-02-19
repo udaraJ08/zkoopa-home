@@ -4,7 +4,6 @@ import * as actionTypes from "./actionTypes";
 
 export function* testReduxCB(action) {
     const {data} = action;
-    alert(data);
     yield put(testReduxSuccess(data+1))
 }
 
