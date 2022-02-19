@@ -73,8 +73,21 @@
 }
 
 .nav-brand {
+    cursor: pointer;
     text-shadow: 1px 1px 3px #232323;
     color: #FEA47F;
+    transition: 0.1s;
+}
+
+.nav-brand:hover {
+    transition: 0.2s;
+    color: #f69065;
+    text-shadow: 3px 3px 5px black;
+}
+
+.nav-brand:active {
+    transition: 0.2s;
+    transform: scale(0.95, 0.95);
 }
 
 @media (max-width: 550px) {
