@@ -3,11 +3,14 @@ import getWeb3 from "../../getWeb3";
 import Zkoopa from "../../contracts/PreSale.json";
 import '../../assets/css/home.css';
 import spy from "../../assets/images/red.png";
+import {useNavigate} from "react-router";
 
 const Home = () => {
 
     const [contract, setContract] = useState(null);
     const [account, setAccount] = useState(null);
+
+    const navigate = useNavigate();
 
     useEffect(async () => {
         const web3 = await getWeb3();
@@ -33,8 +36,7 @@ const Home = () => {
         }
     }
 
-    return <div className="d-flex flex-column overflow-hidden container-fluid"
-                style={{marginTop: "100px", width: "95%"}}>
+    return <div className="d-flex flex-column overflow-hidden container-fluid">
         <h1 className="text-center text-warning font-bangers welcome-topic text-shadow">1. WHO ARE THE <span
             className="text-primary">ZKOOPAS...</span>?</h1>
         <div className="text-whitesmoke text-center">
@@ -186,7 +188,9 @@ const Home = () => {
         <div className="w-100" style={{marginTop: "100px"}}>
             <h1 className="font-bangers text-danger text-center">LET'S PLAY WITH SOME SMART CONTRACTS</h1>
             <div className="mt-5 center btn-ground">
-                <div className="btn play-smart btn-outline-primary center flex-column">
+                <div
+                    onClick={() => navigate("/minter")}
+                    className="btn play-smart btn-outline-primary center flex-column">
                     <div style={{width: "100px", height: "100px"}}
                          className="m-2 mt-5">
                         <img className="object-fit play-img z-index-0" src={`https://avatars.dicebear.com/api/bottts/alien.svg`}/>
